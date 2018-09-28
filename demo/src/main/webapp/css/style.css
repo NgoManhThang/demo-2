@@ -1,0 +1,549 @@
+@charset "UTF-8";
+
+/** タグ定義 **/
+html {
+    height: 100%;
+}
+body{
+	font-family: '游ゴシック', 'Hiragino Kaku Gothic ProN', 'メイリオ', meiryo, 'Helvetica Neue', sans-serif;
+	margin: 0px;
+	height: 100%;
+}
+
+select, input, textarea, button {
+     vertical-align:middle;
+}
+
+th{
+	background-color: #93c9ff;
+	text-align: center;
+	vertical-align: top !important;
+}
+
+td{
+	word-wrap:break-word;
+}
+
+input[type="text"],
+input[type="password"] {
+	width: 100%;
+	height: 35px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+     border:none;
+     top:-2px;
+     top:0\9;
+     margin-right:2px;
+     margin-right: 0\9;
+}
+
+.right {
+    margin-left: auto;
+}
+
+/** 埋込パーツ部分 **/
+/* 埋込用クラス ※モックのみ */
+.header-include {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	vertical-align: bottom;
+}
+.sidebar-include {
+	position: fixed;
+	top: 50px;
+	float: left;
+	width: 20%;
+ 	height: 92.5%;
+	vertical-align: bottom;
+}
+/* 埋込ボディ用クラス ※モックのみ */
+body.part-body{
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 100%;
+	height: 100%;
+
+}
+div.part-body{
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 100%;
+	height: 100%;
+
+}
+.part-body.header{
+	overflow: hidden;
+	height: 50px;
+}
+.part-body.sidebar{
+	overflow-x:hidden;
+	width: 20%;
+}
+/** ヘッダー用定義 **/
+Nav.header-nav {
+	background: linear-gradient(#c1e0ff, #93c9ff);
+}
+/** サイドバー用定義 **/
+.sideber-menu_header{
+	/*position: fixed;*/
+	z-index:1;
+	width: 100%;
+	top:0px;
+	margin-bottom: 0px;
+	border-bottom: 0px;
+}
+.sidebar-menu_link{
+	color: #333;
+	cursor:pointer;
+}
+.sideber-menu_body{
+	position: relative;
+	width: 100%;
+	/*margin-top: 42px;*/
+}
+.sidebar-list_box{
+	height: 190px;
+}
+.panel .sidebar-button{
+	color: #333;
+	cursor:pointer;
+}
+/** 共通部分用定義 **/
+/* コンテンツ用クラス */
+.common-main{
+	float: right;
+	width: 77%;
+	margin: 0px 22px 10px 0px;
+}
+/* タイトル用クラス */
+.common-title{
+	border-bottom: solid 3px #888888;
+	margin-bottom: 10px;
+}
+.common-title_inline{
+	display: inline;
+}
+
+/* コンテンツ用クラス */
+.common-contents{
+	width: 100%;
+	margin: 20px auto;
+}
+
+
+/* ボタン用クラス */
+.button-box{
+	margin: 10px 0 30px;
+    text-align: center;
+}
+
+.button-right_box{
+	float: right;
+	margin-bottom: 30px;
+}
+.button-left_box{
+	float: left;
+	margin-bottom: 30px;
+}
+.button-title_right_box{
+	float: right;
+	margin-bottom: 10px;
+	display: none;
+}
+.button-float_clear{
+	clear: right;
+}
+
+.button-form_group{
+	margin-bottom: 0px;
+}
+
+.button-form_group .button-right{
+	margin-bottom: 0px;
+}
+.button01{
+	width: 90px;
+	height: 25px;
+	padding: 0px;
+	margin-right: 20px;
+}
+
+.button02{
+	height: 22px;
+	font-size: 15px;
+	padding: 0px 10px;
+}
+
+.button03{
+	height: 20px;
+	width: 20px;
+	margin: 10px 0px;
+}
+.button-long{
+	width: 145px;
+}
+
+/* テーブル用クラス */
+.table01{
+	font-size: small;
+	width: 100% !important;
+	position: static !important;
+}
+
+.table01 .button{
+	width: 7.5%;
+}
+
+.table01 .chekbox{
+	width: 3%;
+}
+
+.table02{
+	font-size: small;
+	width: 60%;
+	margin: 0 auto;
+
+}
+
+.table02 .button{
+	width: 7.5%;
+}
+
+.table03{
+	font-size: small;
+	width: 40%;
+
+}
+
+.table-text_center{
+	text-align: center;
+}
+
+.table-text_right{
+	text-align: right;
+}
+
+ .table-textbox_half{
+	width: 46% !important;
+}
+
+ .table-textbox_short{
+	width: 20% !important;
+}
+
+.table-text_serch_button{
+	width: 70% !important;
+}
+
+ .table_selectbox{
+	width: 80%;
+}
+
+.table_record{
+	float:right;
+	margin-top: 10px;
+	margin-right: 25px;
+	clear:right;
+}
+.table02_record{
+	float:right;
+	margin-top: 10px;
+	margin-right: 160px;
+	clear:right;
+}
+
+.tabel-print_status{
+	display: none;
+}
+/* ページネーション用クラス*/
+.pagination-position{
+	width: 30%;
+	margin: -20px auto 0px;
+}
+
+/** アコーディオンリンク用クラス **/
+.panel-block{
+	margin-bottom: 10px;
+}
+
+.panel-block a{
+	text-decoration: none !important;
+	color: #333 !important;
+}
+
+/* CSV出力認証パスワード用クラス */
+.csv_password{
+	width: 20% !important;
+}
+
+
+
+/** MTFB001001 ログイン用定義 **/
+.MTFB001001-title{
+	text-align: center;
+	margin-top: 60px;
+}
+.MTFB001001-block{
+	width: 55%;
+	margin: 0 auto;
+}
+.MTFB001001-item{
+	width: 30%;
+	padding-right: 10px;
+}
+.MTFB001001-input_box{
+	width: 60%;
+	margin: 0px;
+}
+
+
+/** MBFB002001 会員情報一覧用定義 **/
+/* 検索条件テーブル用クラス */
+.MBFB002001-search_header{
+	width: 12%;
+}
+.MBFB002001-search_table01{
+	width: 28%;
+}
+.MBFB002001-search_table02{
+	width: 18%;
+}
+.MBFB002001-result_table01{
+	width: 28%;
+}
+.MBFB002001-result_table02{
+	width: 8%;
+}
+.MBFB002001-tabel-update_status{
+	display: none;
+}
+
+
+/** MBFB002002 会員情報照会用定義 **/
+/* 新規登録ボタン用クラス */
+.MBFB002002-register_button{
+	float: right;
+	margin-bottom: 5px;
+}
+.MBFB002002-table01{
+	width: 50%;
+}
+.MBFB002002-table02{
+	width: 15%;
+}
+.MBFB002002-table03{
+	width: 10%;
+}
+.MBFB002002-table04{
+	width: 5%;
+}
+
+/** MBFB011001 募集馬申込一覧用定義 **/
+.MBFB011001-table_textbox{
+	width: 25% !important;
+}
+.MBFB011001-result_table01{
+	width: 20%;
+}
+
+/** MBFB012001 募集抽選一覧用定義 **/
+.MBFB012001-search_header{
+	width: 24%;
+}
+.MBFB012001-result_table01{
+	width: 22%;
+}
+.MBFB012001-result_table02{
+	width: 8%;
+}
+
+/** MBFB012002 募集抽選照会用定義 **/
+.MBFB012002-table_button{
+	width: 13%;
+}
+.MBFB012002-result_table01{
+	width: 16%;
+}
+
+/** MBFB013001 確認書兼出資契約書**/
+
+.MBFB013001-result_table01{
+	width: 8%;
+}
+
+.MBFB013001-result_table02{
+	width: 16%;
+}
+
+.MBFB013001-table_button01{
+	width: 90px;
+	height: 25px;
+	padding: 0px;
+}
+
+/** MBFB015001 マイナンバー収集管理 **/
+.MBFB015001-search_header{
+	width: 15%;
+}
+.MBFB015001-search_table01{
+	width: 30%;
+}
+.MBFB015001-select_box01{
+	width: 60%;
+}
+.MBFB015001-select_box02{
+	width: 30%;
+}
+.MBFB015001-select_box03{
+	width: 45%;
+}
+
+/** MBFB004001 オペレーション履歴一覧用定義 **/
+.MBFB004001-result_table01{
+	width: 14%;
+}
+.MBFB004001-result_table02{
+	width: 10%;
+}
+.MBFB004001-result_table03{
+	width: 8%;
+}
+
+/** MBFB004 オペレーション履歴用定義 **/
+/** オペレーション履歴登録・編集用定義 **/
+.MBFB004-table1{
+	height: 120px;
+}
+.MBFB004-table_textarea01{
+	width: 90%;
+	height: 110px;
+}
+
+/** MBFB008001 問い合わせ管理用定義 **/
+.MBFB008001-result_table01{
+	width: 12%;
+}
+.MBFB008001-result_table02{
+	width: 5%;
+}
+.MBFB008001-result_table03{
+	width: 14%;
+}
+.MBFB008001-result_table04{
+	width: 7%;
+}
+.MBFB008001-result_table05{
+	width: 18%;
+}
+
+/** HSFB016001 愛馬情報一覧用定義 **/
+.HSFB016001-table_textbox{
+	width: 93% !important;
+}
+.HSFB016001-result_table01{
+	width: 22%;
+}
+
+/** HSFB016003 新規愛馬情報登録用定義 **/
+.HSFB016003-table{
+	font-size: small;
+	width: 70%;
+	margin: 0 auto;
+}
+
+/** HSFB017003 活躍馬登録用定義 **/
+.HSFB017-textbox{
+	width: 75% !important;
+}
+.HSFB017-table_textarea01{
+	width: 90%;
+	height: 110px;
+}
+
+/** ACFB055001 支払調書出力**/
+.ACFB055001-search_header{
+	width: 30%;
+}
+.ACFB055001-search_table{
+	width: 60%;
+}
+
+/** ACFB067001 精算書計算・発行 **/
+.ACFB067001-search_header{
+	width: 20%;
+}
+.ACFB067001-search_table{
+	width: 30%;
+}
+
+/** ACFB067002 精算書計算・発行 詳細 **/
+.ACFB067002-header_size01{
+	width: 15%;
+}
+.ACFB067002-search_size02{
+	width: 10%;
+}
+.ACFB067002-search_size03{
+	width: 5%;
+}
+/** ACFB059006 分配金入力一覧(レース外) */
+.ACFB059006-table_operation{
+	width: 12%;
+}
+
+/** MTFB077002 汎用マスタ情報登録**/
+/** MTFB077003 汎用マスタ情報編集**/
+.MTFB077-table_textarea01{
+	width: 90%;
+	height: 110px;
+}
+
+/** ACFB064001 調整金入力一覧用定義 **/
+.ACFB064001-search_header{
+	width: 35%;
+}
+.ACFB064001-table_button{
+	width: 13%;
+}
+
+/** SLFB036001 馬近況・レポート入力一覧用定義 **/
+.SLFB036001-table{
+	margin-bottom: 0px;
+}
+.SLFB036001-table_button{
+	width: 13%;
+}
+.SLFB036001_textbox{
+	width: 19% !important;
+}
+.SLFB036001_button{
+	width: 130px;
+	height: 25px;
+	padding: 0px;
+	margin-right: 20px;
+}
+
+/** MTFB082002 よくある質問照会用定義 **/
+/** MTFB082005 よくある質問削除用定義 **/
+.MTFB082-table_textarea01{
+	width: 65em;
+}
+
+/** MTFB082003 よくある質問登録用定義 **/
+/** MTFB082004 よくある質問編集用定義 **/
+.MTFB082-table_textarea02{
+	resize: none;
+	 width: 65em;
+	 height: 20em;
+}
+
+/** HSFB084001 愛馬在厩地一覧用定義 **/
+/** HSFB082005 愛馬在厩地履歴一覧用定義 **/
+.HSFB084-table_button{
+	width: 10%;
+}

@@ -1,0 +1,44 @@
+<!-- 共通パーツ ヘッダー -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/charlie.js" type="text/javascript"></script>
+<script type="text/javascript">
+// ログイン画面or以外の画面で、会員情報の表示制御を行う
+function getdata(){
+    if(window.location.search){
+        /* パラメータを取得 */
+        var param = window.location.search.substring(1,window.location.search.length);
+        var memberInfoBlock = document.getElementById("memberInfo");
+		if(param == "login") {
+			memberInfoBlock.style.display = "none"
+		}
+    }
+}
+// ロード時に実行
+window.onload=getdata;
+</script>
+</head>
+<body class="part-body header">
+	<nav class="navbar navbar-default header-nav">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<label class="navbar-text">Charlie</label>
+			</div>
+			<div id="memberInfo">
+				<div class="collapse navbar-collapse navbar-right">
+					<label class="navbar-text"> ID:XXXX</label>
+					<label class="navbar-text"> 氏名:XXXX</label>
+					<label class="navbar-text"> 部署:XXXX</label>
+					<label class="navbar-text"><a style="text-decoration: none; color: #777;" href="../MTFB001001.html" target="_parent"> Logout</a></label>
+				</div>
+			</div>
+		</div>
+	</nav>
+</body>
+</html>
