@@ -34,7 +34,7 @@ public class LoginController {
 		}
 		boolean checkLogin = loginService.checkLogin(login, session);
 		if( checkLogin ) {
-			return "employee";
+			return "redirect:/list-member";
 		}
 		model.addAttribute("loginFail", BundlesUtils.getStringById("", "messages", "loginFail"));
 		return "login";

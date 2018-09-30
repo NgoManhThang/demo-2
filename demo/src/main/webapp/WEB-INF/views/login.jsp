@@ -7,14 +7,16 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Login</title>
-		<link rel="stylesheet" href="./css/bootstrap.css">
-		<link rel="stylesheet" href="./css/bootstrap-datepicker.min.css">
-		<link rel="stylesheet" href="./css/style.css">
-		<script src="./js/jquery-1.10.2.min.js"></script>
-		<script src="./js/bootstrap.js"></script>
-		<script src="./js/bootstrap-datepicker.min.js"></script>
-		<script src="./js/bootstrap-datepicker.ja.min.js"></script>
-		<script src="./js/charlie.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="<c:url value="/css/bootstrap.css" />">
+		<link rel="stylesheet" href="<c:url value="/css/bootstrap-datepicker.min.css"/>">
+		<link rel="stylesheet" href="<c:url value="/css/jquery.autocomplete.css"/>">
+		<link rel="stylesheet" href="<c:url value="/css/style.css"/>">
+		<script src="<c:url value="/js/jquery-1.10.2.min.js"/>"></script>
+		<script src="<c:url value="/js/jquery.autocomplete.min.js"/>"></script>
+		<script src="<c:url value="/js/bootstrap.js"/>"></script>
+		<script src="<c:url value="/js/bootstrap-datepicker.min.js"/>"></script>
+		<script src="<c:url value="/js/bootstrap-datepicker.ja.min.js"/>"></script>
+		<script src="<c:url value="/js/charlie.js"/>" type="text/javascript"></script>
 	</head>
 	<body LeftMargin="0" TopMargin="0">
 		<object type="text/html" data="common/header.html?login"

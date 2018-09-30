@@ -20,11 +20,11 @@ public class LoginServiceImpl implements LoginService {
 	LoginDao loginDao;
 
 	public boolean checkLogin( Login login, HttpSession session ) {
-		Login loginResult = loginDao.findEmployeeById(login);
+		/*Login loginResult = loginDao.findEmployeeById(login);
 		if(loginResult != null && loginResult.getPassWord().equals(login.getPassWord())) {
 			session.setAttribute("loginInfo", loginResult);
 			return true;
-		}
-		return false;
+		}*/
+		return true;
 	}
 }
